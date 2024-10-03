@@ -21,7 +21,7 @@ def get_data(event=None):
         loadingLabel.config(text="Invalid    ")
         loadingLabel.update()
         tkinter.messagebox.showinfo(
-            "ERROR", "Please enter valid U.S. ZIP code.")
+            "ZIP Code ERROR", "Please enter valid U.S. ZIP code.")
         # print("invalid ZIP code")
         return
 
@@ -33,7 +33,7 @@ def get_data(event=None):
         loadingLabel.config(text="Invalid    ")
         loadingLabel.update()
         tkinter.messagebox.showinfo(
-            "ERROR", "Please enter valid U.S. ZIP code.")
+            "Status Code ERROR", "Please verify valid API Key or ZIP code")
         # print("invalid ZIP code")
 
     zipData = zipData.json()
